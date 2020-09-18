@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html>
 <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(225, 227, 222,1);
+        line-height: 1.5;
+        margin: 50px;
+    }
+
+    header {
+        text-align: center;
+    }
+  
+        
+    }
+
+    #container {
+        display: flex;
+        
+         
+        
+    }
+
+    
    #img-div {
     text-align: center;
+    background-color: rgba(0, 0, 0,0.1);
+    
+    
+    
     
     
    } 
-    
+
+   #img-caption {
+       color: black;
+   } 
     #image {
         max-width: 100%;
+        display: block;
+        width: 900px;
         height: auto;
-        display: block;    
-        margin: auto 0;
+        margin: 0 auto;
+        padding: 10px;    
     }
 
+    #info-div {
+        background-color: rgba(0, 0, 0,0.3 );
+
+    }
+
+    #test-animation {
+        position: relative;
+        animation-name: circle;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        height: 100px;
+        background-color: red;
+        width: 100px;
+        border-radius: 50%;
+        }
+    @keyframes circle {
+        0% {
+            background-color: red;
+            left:0px;
+        }
+
+        50% {
+            background-color: royalblue;
+            left: 20px;
+        }
+
+        100% {
+            background-color: red;
+            left: 0px;
+        }
+    }
 </style>
 <head>
     <title> Chadwick Boseman</title>
@@ -21,24 +83,32 @@
 
 <body>
     <header>
-
+        <h1 id="title">Chadwick Boseman</h1>
+        <p>A legend we must all pay tribute to</p>
     </header>
 
     <main id="main">
-        <h1 id="title"> Chadwick Boseman</h1>
-        <section id="img-div">
-            <figure>            
-                <img id="image" src="https://voyagesafriq.com/wp-content/uploads/2020/08/BECB1A66-AAB2-497A-8996-DDA396CD56F4.jpeg"" alt="Chadwick Boseman in Avengers: Engame">
-                <figcaption id="img-caption">Chadwick Boseman in Avengers: Engame </figcaption>
-            </figure>
-        </section>
+        <div id ="container">
+            
+            <div id="img-div">
+                <figure>            
+                    <img id="image" src="https://images.squarespace-cdn.com/content/v1/5c71fa9f8d97406dfec4507d/1598729591374-4CWQZPRWY6SC6HTTL9XI/ke17ZwdGBToddI8pDm48kJRqFJ19D4P4EwsC9z3fiewUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dkV64dCjSK7Zaaf7dwPYPO_gHf_vjqrS5WJoq1nmwotrP7cJNZlDXbgJNE9ef52e8w/IMG_1706.jpeg?format=750w"" alt="Chadwick Boseman in Avengers: Engame">
+                    <figcaption id="img-caption">Chadwick Boseman smiling at the Oscars film awards.</figcaption>
+                </figure>
+            </div>
+            
+        </div>
     </main>
-        <div>
+        <div id ="info-div">
             <p id ="tribute-info">
                 This webpage pays tribute to Chadwick Boseman, the iconic superstar from the Marvel Cinematic Universe. 
                 He was most well known for playing Black Panther in the film of the same name, although he also took on his role in other films such as Captain America: Civil War, Avengers: Infinity War and Avengers: Endgame. Please see more <a id="tribute-link" href="https://en.wikipedia.org/wiki/Chadwick_Boseman" target=_blank>here</a>  
 
             </p>
+        </div>
+
+        <div id="test-animation">
+
         </div>
 
     
